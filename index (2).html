@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informasi edukatif tentang penyakit jantung: gejala, penyebab, pencegahan, dan pengobatan.">
+  <title>Pahami Kesehatan Jantung</title>
+  <style>
+    :root{--navy:#10243a;--blue:#176b87;--red:#d94b58;--pale:#eef6f8;--ink:#243447;--muted:#64748b;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#f8fbfc}
+    header{background:linear-gradient(120deg,#10243a,#176b87);color:white;padding:22px 7%;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #10243a22}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1150px;margin:auto}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:.3px}.brand span{color:#ff9aa2}
+    nav{display:flex;gap:22px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-size:.94rem}nav a:hover{text-decoration:underline}
+    .hero{padding:76px 7%;background:linear-gradient(90deg,#10243aee,#176b87bb),url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80') center/cover;color:white}
+    .hero-inner{max-width:1150px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;color:#bde7f0;font-weight:bold}
+    h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.1;max-width:750px;margin:12px 0 18px}
+    .hero p{max-width:650px;font-size:1.1rem;color:#edf8fa}
+    .btn{display:inline-block;background:#fff;color:var(--navy);padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px}
+    main{max-width:1150px;margin:auto;padding:48px 7%}
+    section{scroll-margin-top:100px;margin-bottom:58px}.section-tag{color:var(--blue);font-weight:bold;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem}
+    h2{font-size:2rem;color:var(--navy);line-height:1.2;margin:8px 0 14px}h3{color:var(--navy);margin-top:0}
+    .intro{max-width:780px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:24px}
+    .card{background:white;padding:23px;border-radius:14px;box-shadow:0 5px 22px #10243a0c;border:1px solid #e6eef1}
+    .icon{width:43px;height:43px;border-radius:12px;background:var(--pale);display:grid;place-items:center;font-size:1.35rem;margin-bottom:14px}
+    .card p{color:var(--muted);margin-bottom:0}.warning{background:#fff1f1;border-left:5px solid var(--red);padding:22px 24px;border-radius:10px;margin:24px 0}
+    .warning h3{color:#a62c39;margin-bottom:7px}.warning p{margin:0}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:start}
+    ul{padding-left:21px}li{margin:8px 0}
+    .steps{counter-reset:step}.step{position:relative;padding:0 0 22px 58px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;background:var(--blue);color:white;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:bold}
+    .note{font-size:.9rem;color:var(--muted);background:var(--pale);padding:17px;border-radius:10px}
+    .faq details{background:white;border:1px solid #e6eef1;border-radius:10px;padding:16px 19px;margin:10px 0}.faq summary{font-weight:bold;color:var(--navy);cursor:pointer}.faq details p{color:var(--muted);margin-bottom:0}
+    footer{background:var(--navy);color:#dce8ef;padding:30px 7%;text-align:center}footer p{max-width:900px;margin:8px auto;font-size:.9rem}
+    @media(max-width:700px){header{position:static}.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding:55px 7%}.split{grid-template-columns:1fr}main{padding-top:35px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">♥ JANTUNG<span>SEHAT</span></div>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a><a href="#gejala">Gejala</a><a href="#penyebab">Penyebab</a><a href="#pengobatan">Pengobatan</a><a href="#pencegahan">Pencegahan</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Kenali • Cegah • Tangani</div>
+    <h1>Jaga Jantung, Jaga Kehidupan.</h1>
+    <p>Kenali informasi dasar mengenai penyakit jantung, mulai dari gejala dan faktor risiko hingga pilihan penanganannya.</p>
+    <a class="btn" href="#tentang">Pelajari lebih lanjut ↓</a>
+  </div>
+</section>
+
+<main>
+  <section id="tentang">
+    <div class="section-tag">01 / Mengenal penyakit</div>
+    <h2>Apa itu penyakit jantung?</h2>
+    <p class="intro">Penyakit jantung adalah istilah untuk berbagai gangguan yang memengaruhi struktur maupun fungsi jantung. Salah satu jenis yang sering dibahas adalah penyakit jantung koroner, yaitu kondisi ketika pembuluh darah yang memasok darah ke otot jantung menyempit atau tersumbat, biasanya akibat penumpukan plak.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">❤️</div><h3>Jantung</h3><p>Organ yang memompa darah untuk mengalirkan oksigen dan nutrisi ke seluruh tubuh.</p></article>
+      <article class="card"><div class="icon">🩸</div><h3>Pembuluh darah</h3><p>Jaringan yang membawa darah menuju dan keluar dari jantung.</p></article>
+      <article class="card"><div class="icon">🩺</div><h3>Pemeriksaan</h3><p>Evaluasi dokter membantu menentukan jenis gangguan dan penanganan yang tepat.</p></article>
+    </div>
+  </section>
+
+  <section id="gejala">
+    <div class="section-tag">02 / Kenali tanda-tandanya</div>
+    <h2>Gejala penyakit jantung</h2>
+    <p class="intro">Gejala dapat berbeda pada setiap orang. Sebagian orang tidak merasakan gejala sampai terjadi komplikasi.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">🫀</div><h3>Nyeri atau tekanan dada</h3><p>Dada terasa tertekan, berat, sesak, atau nyeri. Keluhan dapat muncul saat beraktivitas maupun saat istirahat.</p></article>
+      <article class="card"><div class="icon">😮‍💨</div><h3>Sesak napas</h3><p>Napas terasa pendek, saat beraktivitas atau bahkan ketika beristirahat.</p></article>
+      <article class="card"><div class="icon">💓</div><h3>Detak jantung tidak biasa</h3><p>Jantung terasa berdebar, terlalu cepat, terlalu lambat, atau tidak teratur.</p></article>
+      <article class="card"><div class="icon">🥱</div><h3>Mudah lelah</h3><p>Kelelahan yang tidak biasa atau penurunan kemampuan melakukan aktivitas.</p></article>
+      <article class="card"><div class="icon">🌀</div><h3>Pusing atau pingsan</h3><p>Rasa melayang, pusing berat, atau kehilangan kesadaran.</p></article>
+      <article class="card"><div class="icon">🦵</div><h3>Pembengkakan</h3><p>Pembengkakan pada kaki, pergelangan kaki, atau tungkai dapat terjadi pada kondisi tertentu.</p></article>
+    </div>
+    <div class="warning">
+      <h3>⚠️ Kenali keadaan darurat</h3>
+      <p>Nyeri/tekanan dada yang berlangsung beberapa menit atau hilang-timbul, terutama disertai sesak napas, keringat dingin, mual, pusing, atau nyeri yang menjalar ke lengan, punggung, leher, maupun rahang, dapat menandakan serangan jantung. <strong>Segera hubungi layanan darurat medis setempat atau pergi ke IGD.</strong> Jangan menyetir sendiri dan jangan menunda untuk melihat apakah gejala akan hilang.</p>
+    </div>
+  </section>
+
+  <section id="penyebab">
+    <div class="section-tag">03 / Faktor risiko</div>
+    <h2>Penyebab dan faktor risiko</h2>
+    <p class="intro">Penyakit jantung dapat dipengaruhi oleh kombinasi kondisi kesehatan, kebiasaan hidup, usia, dan faktor keturunan.</p>
+    <div class="split">
+      <div class="card">
+        <h3>Faktor yang dapat dikendalikan</h3>
+        <ul>
+          <li>Tekanan darah tinggi.</li><li>Kadar kolesterol tidak sehat.</li>
+          <li>Diabetes atau kadar gula darah tinggi.</li><li>Merokok dan paparan asap rokok.</li>
+          <li>Kurang aktivitas fisik.</li><li>Pola makan tinggi garam, gula, dan lemak jenuh.</li>
+          <li>Kelebihan berat badan dan konsumsi alkohol berlebihan.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Faktor yang tidak dapat dikendalikan</h3>
+        <ul>
+          <li>Usia yang bertambah.</li><li>Riwayat keluarga dengan penyakit jantung.</li>
+          <li>Faktor keturunan atau kondisi bawaan tertentu.</li>
+          <li>Riwayat penyakit atau kondisi medis tertentu.</li>
+        </ul>
+        <p class="note">Memiliki satu atau beberapa faktor risiko tidak selalu berarti seseorang pasti mengalami penyakit jantung. Pemeriksaan kesehatan membantu menilai risiko pribadi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengobatan">
+    <div class="section-tag">04 / Penanganan</div>
+    <h2>Pengobatan penyakit jantung</h2>
+    <p class="intro">Pengobatan ditentukan berdasarkan jenis penyakit, tingkat keparahan, hasil pemeriksaan, serta kondisi masing-masing pasien.</p>
+    <div class="steps">
+      <div class="step"><h3>Pemeriksaan dan diagnosis</h3><p>Dokter dapat melakukan pemeriksaan fisik, elektrokardiogram (EKG), tes darah, ekokardiografi, tes latih jantung, atau pemeriksaan pencitraan sesuai kebutuhan.</p></div>
+      <div class="step"><h3>Obat-obatan</h3><p>Dokter mungkin meresepkan obat untuk mengendalikan tekanan darah, kolesterol, irama jantung, pembekuan darah, atau gejala gagal jantung. Jenis dan dosis harus mengikuti resep dokter.</p></div>
+      <div class="step"><h3>Prosedur medis</h3><p>Pada kondisi tertentu, tindakan seperti angioplasti dan pemasangan stent, operasi bypass, atau pemasangan alat pengatur irama jantung dapat dipertimbangkan oleh tim medis.</p></div>
+      <div class="step"><h3>Rehabilitasi dan pemantauan</h3><p>Program rehabilitasi jantung, kontrol rutin, aktivitas fisik yang disesuaikan, serta kepatuhan terhadap pengobatan membantu mendukung pemulihan dan kesehatan jangka panjang.</p></div>
+    </div>
+    <p class="note"><strong>Penting:</strong> Jangan menghentikan, memulai, atau mengubah dosis obat jantung tanpa berkonsultasi dengan dokter. Tidak ada satu pengobatan yang cocok untuk semua pasien.</p>
+  </section>
+
+  <section id="pencegahan">
+    <div class="section-tag">05 / Menjaga kesehatan</div>
+    <h2>Bagaimana cara mencegahnya?</h2>
+    <div class="grid">
+      <article class="card"><div class="icon">🥗</div><h3>Makan seimbang</h3><p>Perbanyak sayur, buah, biji-bijian utuh, dan sumber protein sehat. Batasi garam, gula tambahan, serta lemak jenuh.</p></article>
+      <article class="card"><div class="icon">🚶</div><h3>Aktif bergerak</h3><p>Lakukan aktivitas fisik secara teratur sesuai kemampuan dan kondisi kesehatan.</p></article>
+      <article class="card"><div class="icon">🚭</div><h3>Hindari rokok</h3><p>Berhenti merokok dan hindari paparan asap rokok.</p></article>
+      <article class="card"><div class="icon">🩻</div><h3>Cek kesehatan</h3><p>Pantau tekanan darah, kolesterol, dan gula darah sesuai anjuran tenaga kesehatan.</p></article>
+      <article class="card"><div class="icon">⚖️</div><h3>Jaga berat badan</h3><p>Usahakan berat badan yang sehat melalui pola makan dan aktivitas yang konsisten.</p></article>
+      <article class="card"><div class="icon">🌙</div><h3>Istirahat cukup</h3><p>Jaga pola tidur dan kelola stres dengan cara yang sehat.</p></article>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="section-tag">06 / Pertanyaan umum</div>
+    <h2>Pertanyaan yang sering diajukan</h2>
+    <details><summary>Apakah penyakit jantung hanya dialami orang lanjut usia?</summary><p>Tidak. Risiko umumnya meningkat seiring usia, tetapi penyakit jantung juga dapat terjadi pada orang yang lebih muda, termasuk karena faktor keturunan dan kondisi kesehatan tertentu.</p></details>
+    <details><summary>Apakah semua nyeri dada berarti serangan jantung?</summary><p>Tidak. Nyeri dada memiliki banyak kemungkinan penyebab. Namun, nyeri dada yang baru, berat, menetap, atau disertai gejala darurat harus segera diperiksa dan tidak boleh didiagnosis sendiri.</p></details>
+    <details><summary>Apakah penyakit jantung bisa disembuhkan?</summary><p>Hasil penanganan bergantung pada jenis dan tingkat penyakit. Banyak kondisi dapat dikendalikan dengan pengobatan, perubahan gaya hidup, prosedur medis, dan pemantauan rutin.</p></details>
+  </section>
+
+  <section>
+    <div class="section-tag">Informasi lebih lanjut</div>
+    <h2>Sumber bacaan</h2>
+    <ul>
+      <li><a href="https://www.who.int/health-topics/cardiovascular-diseases" target="_blank" rel="noopener">World Health Organization – Cardiovascular diseases</a></li>
+      <li><a href="https://www.nhs.uk/conditions/coronary-heart-disease/" target="_blank" rel="noopener">NHS – Coronary heart disease</a></li>
+      <li><a href="https://www.heart.org/en/health-topics/heart-attack" target="_blank" rel="noopener">American Heart Association – Heart Attack</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p><strong>JANTUNGSEHAT — Edukasi Kesehatan</strong></p>
+  <p>Website ini dibuat untuk tujuan edukasi dan bukan pengganti konsultasi, diagnosis, atau pengobatan dari dokter maupun tenaga kesehatan profesional.</p>
+  <p>© 2026 JantungSehat</p>
+</footer>
+</body>
+</html>
